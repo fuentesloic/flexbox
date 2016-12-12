@@ -1,0 +1,26 @@
+body {
+  margin: 0;
+  width: 1010px;
+}
+
+/* Style d'écriture: PARENT ENFANTS */
+
+body section {
+  display: flex;
+  flex-direction: column;
+}
+section div {
+  display: flex;
+  align-items: center;
+}
+
+section div:nth-child(3),
+section div:nth-child(5),
+section div:nth-child(7) {
+  align-self: flex-end;
+}
+
+section div:first-child,
+section div:last-child {
+  align-self: center;
+}
