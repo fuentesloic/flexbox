@@ -45,3 +45,23 @@ article {
 .row5 {
   flex-flow: row wrap;
 }
+
+.row6 {
+  justify-content: flex-start;
+}
+
+.row7 {
+  justify-content: flex-end;
+}
+
+.row8 {
+  justify-content: center;
+}
+
+.row9 {
+  justify-content: space-between;
+}
+
+.row10 {
+  justify-content: space-around;
+}
