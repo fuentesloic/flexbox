@@ -8,102 +8,112 @@
   </head>
 
   <body>
-    <h1>display: flex</h2>
-    <h3>les parents ont le pouvoir !</h3>
+    <header>
+      <h1>display: flex</h2>
+      <h3>les parents ont le pouvoir !</h3>
+    </header>
     <main>
       <!--
         flex-direction
       -->
-      <h2>flex-direction</h2>
-      <h3>en ligne ou en colonne ?</h3>
-      <p>
-        row / column</br>
-        natif: row</br>
-        +: row-reverse / column-reverse</br>
-      </p>
-      <section class="row1">
-        <article>enfant row</article>
-        <article>enfant row</article>
-        <article>enfant row</article>
-      </section>
-      <p>de manière native ordonner au enfant d'être en colonne les oblige à être stretch</p>
-      <section class="row2">
-        <article>enfant column</article>
-        <article>enfant column</article>
-        <article>enfant column</article>
+      <section>
+        <h2>flex-direction</h2>
+        <h3>en ligne ou en colonne ?</h3>
+        <p>
+          row / column</br>
+          natif: row</br>
+          +: row-reverse / column-reverse</br>
+        </p>
+        <ul class="row1">
+          <li>enfant row</li>
+          <li>enfant row</li>
+          <li>enfant row</li>
+        </ul>
+        <p>de manière native ordonner au enfant d'être en colonne les oblige à être stretch</p>
+        <ul class="row2">
+          <li>enfant column</li>
+          <li>enfant column</li>
+          <li>enfant column</li>
+        </ul>
       </section>
       <!--
         flex-wrap
       -->
-      <h2>flex-wrap</h2>
-      <h3>à la ligne ou non ?</h3>
-      <p>
-        nowrap / wrap</br>
-        natif: nowrap</br>
-        +: wrap-reverse</br>
-      </p>
-      <section class="row3">
-        <article>enfant nowrap</article>
-        <article>enfant nowrap</article>
-        <article>enfant nowrap</article>
-      </section>
-      <section class="row4">
-        <article>enfant wrap</article>
-        <article>enfant wrap</article>
-        <article>enfant wrap</article>
+      <section>
+        <h2>flex-wrap</h2>
+        <h3>à la ligne ou non ?</h3>
+        <p>
+          nowrap / wrap</br>
+          natif: nowrap</br>
+          +: wrap-reverse</br>
+        </p>
+        <ul class="row3">
+          <li>enfant nowrap</li>
+          <li>enfant nowrap</li>
+          <li>enfant nowrap</li>
+        </ul>
+        <ul class="row4">
+          <li>enfant wrap</li>
+          <li>enfant wrap</li>
+          <li>enfant wrap</li>
+        </ul>
       </section>
       <!--
         flex-flow
       -->
-      <h2>flex-flow</h2>
-      <h3>un condensé ?</h3>
-      <p>
-        la version courte c'est flex-flow: flex-direction et flex-wrap</br>
-        de manière native flex-flow = row et nowrap
-      </p>
-      <section class="row5">
-        <article>enfant row wrap</article>
-        <article>enfant row wrap</article>
-        <article>enfant row wrap</article>
+      <section>
+        <h2>flex-flow</h2>
+        <h3>un condensé ?</h3>
+        <p>
+          la version courte c'est flex-flow: flex-direction et flex-wrap</br>
+          de manière native flex-flow = row et nowrap
+        </p>
+        <ul class="row5">
+          <li>enfant row wrap</li>
+          <li>enfant row wrap</li>
+          <li>enfant row wrap</li>
+        </ul>
       </section>
       <!--
         justify-content
       -->
-      <h2>justify-content</h2>
-      <h3>de gauche à droite ou l'axe des X ?</h3>
-      <p>
-        justify-content fait travailler (c'est illégal) les enfants sur l'horizontalité, l'axe X</br>
-        de manière native justify-content = flex-start
-      </p>
-      <section class="row6">
-        <article>enfant flex-start</article>
-        <article>enfant flex-start</article>
-        <article>enfant flex-start</article>
+      <section>
+        <h2>justify-content</h2>
+        <h3>de gauche à droite ou l'axe des X ?</h3>
+        <p>
+          justify-content fait travailler (c'est illégal) les enfants sur l'horizontalité, l'axe X</br>
+          de manière native justify-content = flex-start
+        </p>
+        <ul class="row6">
+          <li>enfant flex-start</li>
+          <li>enfant flex-start</li>
+          <li>enfant flex-start</li>
+        </ul>
+        <ul class="row7">
+          <li>enfant flex-end</li>
+          <li>enfant flex-end</li>
+          <li>enfant flex-end</li>
+        </ul>
+        <ul class="row8">
+          <li>enfant center</li>
+          <li>enfant center</li>
+          <li>enfant center</li>
+        </ul>
+        <ul class="row9">
+          <li>enfant space-between</li>
+          <li>enfant space-between</li>
+          <li>enfant space-between</li>
+        </ul>
+        <ul class="row10">
+          <li>enfant space-around</li>
+          <li>enfant space-around</li>
+          <li>enfant space-around</li>
+        </ul>
+        <p>
+          Pour résumer:</br>
+          justify-content: flex-start | flex-end | center | space-between | space-around;
+        </p>
       </section>
-      <section class="row7">
-        <article>enfant flex-end</article>
-        <article>enfant flex-end</article>
-        <article>enfant flex-end</article>
-      </section>
-      <section class="row8">
-        <article>enfant center</article>
-        <article>enfant center</article>
-        <article>enfant center</article>
-      </section>
-      <section class="row9">
-        <article>enfant space-between</article>
-        <article>enfant space-between</article>
-        <article>enfant space-between</article>
-      </section>
-      <section class="row10">
-        <article>enfant space-around</article>
-        <article>enfant space-around</article>
-        <article>enfant space-around</article>
-      </section>
-      <p>
-        Pour résumer:</br>
-        justify-content: flex-start | flex-end | center | space-between | space-around;
-      </p>
     </main>
   </body>
 </html>
