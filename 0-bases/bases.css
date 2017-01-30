@@ -1,0 +1,55 @@
+body {
+  margin: 0;
+  font-size: initial;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+main {
+  padding: 50px;
+}
+
+section {
+  display: flex;
+  background-color: lightgrey;
+}
+
+article {
+  padding: 0.5em;
+  background-color: grey;
+  text-align: center;
+  color: white;
+  text-transform: uppercase;
+  margin: 10px;
+  flex-basis: 200px;
+}
+
+.row1 > article:first-child {
+
+}
+
+.row2 > article:first-child {
+
+}
+
+.row3 > article:first-child {
+
+}
+
+.row4 > article:first-child {
+
+}
+
+.row5 > article:first-child {
+
+}
+
+.row6 > article:first-child {
+
+}
+
+.row7 > article:first-child {
+
+}
