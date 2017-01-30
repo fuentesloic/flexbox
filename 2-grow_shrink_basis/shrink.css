@@ -1,0 +1,58 @@
+body {
+  margin: 0;
+  font-size: initial;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+main {
+  padding: 50px;
+}
+
+section {
+  display: flex;
+  background-color: lightgrey;
+}
+
+article {
+  padding: 0.5em;
+  background-color: grey;
+  text-align: center;
+  color: white;
+  text-transform: uppercase;
+  margin: 10px;
+  flex-basis: 200px;
+}
+
+.row1 > article:first-child {
+  flex-grow: 1;
+}
+
+.row2 > article:first-child {
+  flex-grow: 2;
+}
+
+.row3 > article:first-child {
+  flex-grow: 1;
+}
+.row3 > article:nth-child(2) {
+  flex-grow: 2;
+}
+
+.row4 > article:first-child {
+  flex-shrink: 2;
+}
+
+.row5 > article:first-child {
+  flex-shrink: 4;
+}
+
+.row6 > article:first-child {
+  flex-basis: auto;
+}
+
+.row7 > article:first-child {
+  flex-basis: 1;
+}
