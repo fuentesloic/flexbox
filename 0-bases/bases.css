@@ -78,3 +78,31 @@ li {
 .row10 {
   justify-content: space-around;
 }
+
+.row11 {
+  align-items: flex-start;
+  height: 100px;
+}
+
+.row12 {
+  align-items: flex-end;
+  height: 100px;
+}
+
+.row13 {
+  align-items: center;
+  height: 100px;
+}
+
+.row14 {
+  align-items: stretch;
+  height: 100px;
+}
+
+.row15 {
+  display: baseline;
+  height: 100px;
+}
+.row15 li:first-of-type {
+
+}
