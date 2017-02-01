@@ -114,3 +114,33 @@ li {
 .row16 {
   align-items: baseline;
 }
+
+.alignContent ul {
+  height: 200px;
+}
+.alignContent li {
+  height: 50px;
+  width: 30%;
+}
+
+.row17 {
+  align-content: flex-start;
+}
+.row18 {
+  align-content: flex-end;
+}
+.row19 {
+  align-content: center;
+}
+.row20 {
+  align-content: space-between;
+}
+.row21 {
+  align-content: space-around;
+}
+.row22 {
+  align-content: stretch;
+}
+.wrap {
+  flex-wrap: wrap;
+}
