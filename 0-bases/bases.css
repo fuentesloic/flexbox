@@ -99,10 +99,18 @@ li {
   height: 100px;
 }
 
-.row15 {
-  display: baseline;
+.row15,
+.row16 {
   height: 100px;
 }
-.row15 li:first-of-type {
-
+.row15 li:first-of-type,
+.row16 li:first-of-type {
+  padding-top: 25px;
+}
+.row15 li:last-of-type,
+.row16 li:last-of-type {
+  padding-top: 50px;
+}
+.row16 {
+  align-items: baseline;
 }
