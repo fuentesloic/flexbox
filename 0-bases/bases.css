@@ -4,7 +4,7 @@ body {
   font-family: Verdana, Geneva, sans-serif;
   background-color: #EBEEF1;
   line-height: 2;
-  padding: 2em 6em;
+  padding: 3em 12em 5em 3em;
 }
 * {
   box-sizing: border-box;
@@ -13,24 +13,34 @@ body {
 header {
   background-color: #FFFFFF;
   text-align: center;
-  padding: 5em 0 2em;
+  justify-content: center;
+  padding: 6em 0 8em;
+  margin-bottom: 5em;
 }
 nav {
-  display: none;
   position: fixed;
   top: 0;
-  left: 0;
-  width: 100%;
-  background-color: #FFFFFF;
+  right: 0;
+  background-color: transparent;
+  height: 100%;
 }
-nav ul {
-  background-color: inherit;
+.row0 {
+  display: flex;
+  background-color: rgba(255, 255, 255, 0.7);
+  height: 100%;
+  flex-direction: column;
+  margin: 0;
+  justify-content: space-around;
+  font-size: 0.7em;
+}
+.row0 li {
+  background-color: rgba(66, 139, 202, 0.5);
 }
 
 section {
-  padding: 5em 15em;
+  padding: 5em 15em 7em;
   background-color: #FFFFFF;
-  border-bottom: 1px solid rgba(0, 0, 255, 0.1);
+  border-bottom: 1em solid #EBEEF1;
 }
 
 ul {
@@ -46,6 +56,9 @@ ul p {
   margin-left: 1em;
   text-transform: uppercase;
   font-size: 1.15em;
+}
+code {
+  font-size: 1.3em;
 }
 
 li,
@@ -77,23 +90,31 @@ h1 {
   text-transform: uppercase;
   color: #286ca7;
   font-size: 5em;
+  margin: 0;
 }
 h2 {
   text-transform: uppercase;
   color: #286ca7;
 }
+h3 {
+  margin: 0;
+}
 section header {
   padding: 0 0 7em;
+  border-bottom: 1em solid #EBEEF1;
 }
 section header h1 {
   margin: 0;
 }
-.row0 {
-  flex-wrap: wrap;
-  justify-content: space-around;
-  margin: 0;
-}
 
+.rowBlock {
+  display: block;
+  padding: 0.5em 0;
+}
+.rowBlock li{
+  width: 5em;
+  margin: 1em;
+}
 .row1 {
   flex-direction: row; /* comportement natif */
 }

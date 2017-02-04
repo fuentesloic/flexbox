@@ -10,12 +10,13 @@
   <body>
     <header>
       <h1>flexbox</h1>
-      <h3>ou mise en page facile</h3>
+      <h3>la mise en page facile</h3>
       <nav>
         <ul class="row0">
-          <li><a href="##introduction">introduction</a></li>
+          <li><a href="#introduction">introduction</a></li>
+          <li><a href="#displayFlex">display: flex</a></li>
           <li><a href="#flexDirection">flex-direction</a></li>
-          <li><a href="#flexWrap">flex-direction</a></li>
+          <li><a href="#flexWrap">flex-wrap</a></li>
           <li><a href="#flexFlow">flex-flow</a></li>
           <li><a href="#justifyContent">justify-content</a></li>
           <li><a href="#alignItems">align-items</a></li>
@@ -43,47 +44,68 @@
           </p>
         </article>
         <article>
-          <h2>un language basique</h2>
+          <h2>se synchroniser ensemble</h2>
           <p>
-            Pour utiliser ensemble le même language, je vous propose de raisonner parent/enfant.<br />
+            Pour utiliser le même language, je vous propose de raisonner parent/enfant.<br />
             Le parent est donc le conteneur des enfants, il les englobe.<br />
             Par exemple:<br />
-            pour une liste, <code>&lt;ul&gt;</code> englobe des <code>&lt;li&gt;</code><br />
-            <code>&lt;ul&gt;</code> est donc le parent et les <code>&lt;li&gt;</code> sont ses enfants.
-            Il va passer un ensemble d'ordre aux enfants.<br />
-            Les enfants s'exécutent mais peuvent s'émanciper en adoptant un comportement guidé par une propriété qu'ils porteraient directement<br />
+            Une liste <code>&lt;ul&gt;</code> englobe des <code>&lt;li&gt;</code><br />
+            <code>&lt;ul&gt;</code> est donc le parent et les <code>&lt;li&gt;</code> sont ses enfants.<br />
+            Le parent va passer un ensemble d'ordre aux enfants.<br />
+            Les enfants s'exécutent mais peuvent s'émanciper, 2ième partie<br />
             C'est donc comme dans la vrai vie, le parent ordonne, l'enfant s'execute, l'adolescent se rebelle.<br />
           </p>
         </article>
         <article>
-          <h2>flexbox, sa présentation critiquable</h2>
-          <p>
-            Beaucoup de ressource sur flexbox sont disponible, nous les référenceronts dans la dernière partie<br />
-            Pour illustrer la suite nous utiliserons un parent (le container donc) comme tel:
-          </p>
+          <h2>un language basique</h2>
+          <p>Pour illustrer :</p>
           <ul class="parent">
-            <p>parent</p>
+            <p>parent <code>&lt;ul&gt;</code></p>
           </ul>
           <p>et des enfants comme tel:</p>
-          <li class="enfant">enfant 1</li>
-          <li class="enfant">enfant 2</li>
-          <li class="enfant">enfant 3</li>
-          <p>pour arriver à ça:</p>
+          <li class="enfant">enfant 1 <code>&lt;li&gt;</code></li>
+          <li class="enfant">enfant 2 <code>&lt;li&gt;</code></li>
+          <li class="enfant">enfant 3 <code>&lt;li&gt;</code></li>
+          <p>pour arriver à cela:</p>
           <ul>
             <li>enfant 1</li>
             <li>enfant 2</li>
             <li>enfant 3</li>
           </ul>
+          <p>
+            Beaucoup de ressource sur flexbox sont disponibles, nous les référenceront dans la dernière partie<br />
+            Pour illustrer la suite nous utiliserons un parent (le container donc) comme tel:
+          </p>
         </article>
       </section>
       <!--
         flex-direction
       -->
+      <section id="#displayFlex">
+        <h1>display: flex</h1>
+        <h3>les parents ont le pouvoir !</h3>
+        <p>
+          la propriété <code>display: flex</code> permet d'indiquer au parent qu'il va pouvoir donner des ordres aux enfants.
+          De manière native, de base donc, <code>display: flex</code> donne <em>déja</em> des ordres. Elles seront explicitées à chaques propriétés.
+          Cela explique la différence entre un <code>display: block</code>
+        </p>
+        <ul class="rowBlock">
+          <li>block</li>
+          <li>block</li>
+          <li>block</li>
+        </ul>
+        <p>et un <code>display: flex</code></p>
+        <ul class="row1">
+          <li>row</li>
+          <li>row</li>
+          <li>row</li>
+        </ul>
+        <p>
+          De manière native <code>display: flex</code> donne une direction qui est <code>row</code> et ordonne/impose aux enfants
+          de se mettre en ligne
+         </p>
+      </section>
       <section id="flexDirection">
-        <header>
-          <h1>display: flex</h1>
-          <h3>les parents ont le pouvoir !</h3>
-        </header>
         <h2>flex-direction</h2>
         <h3>en ligne ou en colonne ?</h3>
         <p>
@@ -361,5 +383,6 @@
         </p>
       </section>
     </main>
+    <script type="text/javascript" src="stickyNav.js"></script>
   </body>
 </html>
