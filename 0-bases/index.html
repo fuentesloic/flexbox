@@ -9,10 +9,11 @@
 
   <body>
     <header>
-      <h1>display: flex</h1>
-      <h3>les parents ont le pouvoir !</h3>
+      <h1>flexbox</h1>
+      <h3>ou mise en page facile</h3>
       <nav>
         <ul class="row0">
+          <li><a href="##introduction">introduction</a></li>
           <li><a href="#flexDirection">flex-direction</a></li>
           <li><a href="#flexWrap">flex-direction</a></li>
           <li><a href="#flexFlow">flex-flow</a></li>
@@ -24,15 +25,71 @@
     </header>
     <main>
       <!--
+        introduction
+      -->
+      <section id="introduction">
+        <article>
+          <h2>un modèle simple</h2>
+          <p>
+            <strong>Flexbox</strong> (pour flexible box) est un mode de mise en page prévoyant
+            une disposition des éléments d’une page de telle sorte que ces éléments possèdent un
+            comportement prévisible lorsqu’ils doivent s’accommoder de différentes tailles d’écrans/appareils (src <a href="https://developer.mozilla.org/fr/docs/Web/CSS/Disposition_des_bo%C3%AEtes_flexibles_CSS/Utilisation_des_flexbox_en_CSS">mdn</a>).<br />
+            Concernant son <a href="http://caniuse.com/#feat=flexbox">implantation</a>, nous sommes bon, IE est encore à la traine ...<br />
+            Mon sentiment sur le modèle que propose flexbox est qu'il apparait <strong>simple</strong> et
+            <strong>ludique</strong>.<br />
+            La pratique peut faire ressortir quelques résultats étranges mais la <strong>courbe d'apprentissage</strong>,le
+            <strong>fun procuré</strong> et un <strong>outil intélligent</strong> font de flexbox une <strong>découverte cool</strong>
+            en CSS.
+          </p>
+        </article>
+        <article>
+          <h2>un language basique</h2>
+          <p>
+            Pour utiliser ensemble le même language, je vous propose de raisonner parent/enfant.<br />
+            Le parent est donc le conteneur des enfants, il les englobe.<br />
+            Par exemple:<br />
+            pour une liste, <code>&lt;ul&gt;</code> englobe des <code>&lt;li&gt;</code><br />
+            <code>&lt;ul&gt;</code> est donc le parent et les <code>&lt;li&gt;</code> sont ses enfants.
+            Il va passer un ensemble d'ordre aux enfants.<br />
+            Les enfants s'exécutent mais peuvent s'émanciper en adoptant un comportement guidé par une propriété qu'ils porteraient directement<br />
+            C'est donc comme dans la vrai vie, le parent ordonne, l'enfant s'execute, l'adolescent se rebelle.<br />
+          </p>
+        </article>
+        <article>
+          <h2>flexbox, sa présentation critiquable</h2>
+          <p>
+            Beaucoup de ressource sur flexbox sont disponible, nous les référenceronts dans la dernière partie<br />
+            Pour illustrer la suite nous utiliserons un parent (le container donc) comme tel:
+          </p>
+          <ul class="parent">
+            <p>parent</p>
+          </ul>
+          <p>et des enfants comme tel:</p>
+          <li class="enfant">enfant 1</li>
+          <li class="enfant">enfant 2</li>
+          <li class="enfant">enfant 3</li>
+          <p>pour arriver à ça:</p>
+          <ul>
+            <li>enfant 1</li>
+            <li>enfant 2</li>
+            <li>enfant 3</li>
+          </ul>
+        </article>
+      </section>
+      <!--
         flex-direction
       -->
       <section id="flexDirection">
+        <header>
+          <h1>display: flex</h1>
+          <h3>les parents ont le pouvoir !</h3>
+        </header>
         <h2>flex-direction</h2>
         <h3>en ligne ou en colonne ?</h3>
         <p>
-          row / column<br>
-          natif: row<br>
-          +: row-reverse / column-reverse<br>
+          row / column<br />
+          natif: row<br />
+          +: row-reverse / column-reverse<br />
         </p>
         <ul class="row1">
           <li>row</li>
@@ -53,9 +110,9 @@
         <h2>flex-wrap</h2>
         <h3>à la ligne ou non ?</h3>
         <p>
-          nowrap / wrap<br>
-          natif: nowrap<br>
-          +: wrap-reverse<br>
+          nowrap / wrap<br />
+          natif: nowrap<br />
+          +: wrap-reverse<br />
         </p>
         <ul class="row3">
           <li>nowrap</li>
@@ -75,7 +132,7 @@
         <h2>flex-flow</h2>
         <h3>un condensé ?</h3>
         <p>
-          la version courte c'est flex-flow: flex-direction et flex-wrap<br>
+          la version courte c'est flex-flow: flex-direction et flex-wrap<br />
           de manière native flex-flow = row et nowrap
         </p>
         <ul class="row5">
@@ -91,7 +148,7 @@
         <h2>justify-content</h2>
         <h3>de gauche à droite ou l'axe des X ?</h3>
         <p>
-          justify-content fait travailler (c'est illégal) les enfants sur l'horizontalité, l'axe X<br>
+          justify-content fait travailler (c'est illégal) les enfants sur l'horizontalité, l'axe X<br />
           de manière native justify-content = flex-start
         </p>
         <ul class="row6">
@@ -120,7 +177,7 @@
           <li>space-around</li>
         </ul>
         <p>
-          Pour résumer:<br>
+          Pour résumer:<br />
           justify-content: flex-start | flex-end | center | space-between | space-around;
         </p>
       </section>
@@ -131,7 +188,7 @@
         <h2>align-items</h2>
         <h3>de haut en bas ou l'axe des Y ?</h3>
         <p>
-          align-items fait travailler (c'est encore illégal) les enfants sur la verticalité, l'axe Y<br>
+          align-items fait travailler (c'est encore illégal) les enfants sur la verticalité, l'axe Y<br />
           de manière native align-items = stretch (min et max width sont respectées)
         </p>
         <ul class="row11">
@@ -165,7 +222,7 @@
           <li>avec baseline</li>
         </ul>
         <p>
-          Pour résumer:<br>
+          Pour résumer:<br />
           align-items: flex-start | flex-end | center | baseline | stretch;
         </p>
       </section>
@@ -176,8 +233,8 @@
         <h2>align-content</h2>
         <h3>s'organiser sur plus d'une ligne ?</h3>
         <p>
-          align-content pour faire simple c'est comme justify-content avec la place disponible en variante <br>
-          inutile s'il n'y a qu'une seule ligne ... logique ? <br>
+          align-content pour faire simple c'est comme justify-content avec la place disponible en variante <br />
+          inutile s'il n'y a qu'une seule ligne ... logique ? <br />
           rappel: justify-content fait travailler les enfants sur l'axe des X (horizontal)
         </p>
         <p>justify-content:</p>
@@ -299,8 +356,8 @@
           <li>stretch wrap</li>
         </ul>
         <p>
-          Pour résumer:<br>
-          align-content: flex-start | flex-end | center | space-between | space-around | stretch;<br>
+          Pour résumer:<br />
+          align-content: flex-start | flex-end | center | space-between | space-around | stretch;<br />
         </p>
       </section>
     </main>
