@@ -36,6 +36,9 @@ nav {
 .row0 li {
   background-color: rgba(66, 139, 202, 0.5);
 }
+.activ {
+  background-color: rgba(66, 139, 202, 0.9)!important;
+}
 
 section {
   padding: 5em 15em 7em;
