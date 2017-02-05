@@ -110,6 +110,17 @@ section header h1 {
   margin: 0;
 }
 
+footer {
+  width: 100%;
+  background-color: #FFFFFF;
+  text-align: center;
+}
+footer a {
+  text-decoration: none;
+  color: #286ca7;
+  font-size: 1.25em;
+}
+
 .rowBlock {
   display: block;
   padding: 0.5em 0;

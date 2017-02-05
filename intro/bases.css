@@ -1,0 +1,142 @@
+body {
+  margin: 0;
+  font-size: 100%;
+  font-family: Verdana, Geneva, sans-serif;
+  background-color: #EBEEF1;
+  line-height: 2;
+  padding: 3em 12em 5em 3em;
+}
+* {
+  box-sizing: border-box;
+}
+
+header {
+  background-color: #FFFFFF;
+  text-align: center;
+  justify-content: center;
+  padding: 6em 0 8em;
+  margin-bottom: 5em;
+}
+nav {
+
+}
+
+section {
+  padding: 5em 15em 7em;
+  background-color: #FFFFFF;
+  border-bottom: 1em solid #EBEEF1;
+}
+
+ul {
+  display: flex;
+  background-color: lightgrey;
+  margin-bottom: 20px;
+  list-style:none;
+  border-radius: 0.25em;
+  padding: 0;
+  box-shadow: 2px 2px 2px 1px rgba(0, 0, 0, 0.5);
+}
+ul p {
+  margin-left: 1em;
+  text-transform: uppercase;
+  font-size: 1.15em;
+}
+code {
+  font-size: 1.3em;
+}
+
+li,
+.enfant {
+  padding: 0.5em;
+  background-color: #428BCA;
+  border-radius: 0.5em;
+  text-align: center;
+  color: white;
+  text-transform: uppercase;
+  margin: 10px;
+  box-shadow: 2px 2px 2px 1px rgba(0, 0, 0, 0.5);
+}
+.enfant {
+  display: inline-block;
+}
+li a {
+  text-decoration: none;
+  color: #FFFFFF;
+}
+article a {
+  color: #286ca7;
+}
+header li:hover {
+  background-color: #286ca7;
+  box-shadow: 2px 2px 2px 1px rgba(0, 0, 0, 0.5);
+}
+header {
+  background-color: #FFFFFF;
+  text-align: center;
+  justify-content: center;
+  padding: 6em 0 8em;
+  margin-bottom: 5em;
+}
+nav {
+  position: fixed;
+  top: 0;
+  right: 0;
+  background-color: #EBEEF1;
+  height: 100%;
+}
+.row0 {
+  display: flex;
+  background-color: #EBEEF1;
+  height: 100%;
+  flex-direction: column;
+  margin: 0;
+  justify-content: center;
+  font-size: 0.7em;
+  box-shadow: none;
+}
+.row0 li {
+  background-color: rgba(66, 139, 202, 0.5);
+}
+.activ {
+  background-color: rgba(66, 139, 202, 0.9)!important;
+}
+h1 {
+  text-transform: uppercase;
+  color: #286ca7;
+  font-size: 5em;
+  margin: 0;
+}
+h2 {
+  text-transform: uppercase;
+  color: #286ca7;
+}
+h3 {
+  margin: 0;
+}
+section header {
+  padding: 0 0 7em;
+  border-bottom: 1em solid #EBEEF1;
+}
+section header h1 {
+  margin: 0;
+}
+
+footer {
+  width: 100%;
+  background-color: #FFFFFF;
+  text-align: center;
+}
+footer a {
+  text-decoration: none;
+  color: #286ca7;
+  font-size: 1.25em;
+}
+
+.rowBlock {
+  display: block;
+  padding: 0.5em 0;
+}
+.rowBlock li{
+  width: 5em;
+  margin: 1em;
+}
