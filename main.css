@@ -4,7 +4,7 @@ body {
   font-family: Verdana, Geneva, sans-serif;
   background-color: #EBEEF1;
   line-height: 2;
-  padding: 3em 12em 5em 3em;
+  padding: 3em 10em 5em 3em;
 }
 * {
   box-sizing: border-box;
@@ -21,17 +21,18 @@ nav {
   position: fixed;
   top: 0;
   right: 0;
-  background-color: transparent;
+  background-color: #EBEEF1;
   height: 100%;
 }
 .row0 {
   display: flex;
-  background-color: rgba(255, 255, 255, 0.7);
+  background-color: #EBEEF1;
   height: 100%;
   flex-direction: column;
   margin: 0;
-  justify-content: space-around;
+  justify-content: center;
   font-size: 0.7em;
+  box-shadow: none;
 }
 .row0 li {
   background-color: rgba(66, 139, 202, 0.5);
@@ -111,14 +112,21 @@ section header h1 {
 }
 
 footer {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
   width: 100%;
+  height: 5em;
   background-color: #FFFFFF;
-  text-align: center;
 }
 footer a {
   text-decoration: none;
   color: #286ca7;
   font-size: 1.25em;
+}
+.column {
+  display: flex;
+  flex-direction: column;
 }
 
 .rowBlock {

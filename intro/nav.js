@@ -22,7 +22,7 @@ window.onscroll = function () {
     liNav[1].setAttribute('class', 'activ');
     liNav[0].removeAttribute('class', 'active');
     liNav[2].removeAttribute('class', 'active');
-  } else {
+  } else if (scroll > posRessources){
     liNav[1].removeAttribute('class', 'active');
     liNav[2].setAttribute('class', 'activ');
   }
