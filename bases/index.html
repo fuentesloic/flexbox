@@ -4,17 +4,18 @@
     <meta charset="UTF-8">
     <title>Flexbox - bases</title>
     <meta name="viewport" content="width=device-width, initial-scale=1">
-    <link rel="stylesheet" href="bases.css">
+    <link rel="stylesheet" href="../main.css">
   </head>
 
   <body>
     <header>
-      <h1>display: flex</h1>
-      <h3>les parents ont le pouvoir !</h3>
+      <h1>flexbox</h1>
+      <h3>la mise en page funky</h3>
       <nav>
         <ul class="row0">
+          <li><a href="#displayFlex">display: flex</a></li>
           <li><a href="#flexDirection">flex-direction</a></li>
-          <li><a href="#flexWrap">flex-direction</a></li>
+          <li><a href="#flexWrap">flex-wrap</a></li>
           <li><a href="#flexFlow">flex-flow</a></li>
           <li><a href="#justifyContent">justify-content</a></li>
           <li><a href="#alignItems">align-items</a></li>
@@ -24,15 +25,42 @@
     </header>
     <main>
       <!--
+        display: flex
+      -->
+      <section id="displayFlex">
+        <h1>display: flex</h1>
+        <h3>les parents ont le pouvoir !</h3>
+        <p>
+          la propriété <code>display: flex</code> permet d'indiquer au parent qu'il va pouvoir donner des ordres aux enfants.
+          De manière native, de base donc, <code>display: flex</code> donne <em>déja</em> des ordres. Elles seront explicitées à chaques propriétés.
+          Cela explique la différence entre un <code>display: block</code>
+        </p>
+        <ul class="rowBlock">
+          <li>block</li>
+          <li>block</li>
+          <li>block</li>
+        </ul>
+        <p>et un <code>display: flex</code></p>
+        <ul class="row1">
+          <li>row</li>
+          <li>row</li>
+          <li>row</li>
+        </ul>
+        <p>
+          De manière native <code>display: flex</code> donne une direction qui est <code>row</code> et ordonne/impose aux enfants
+          de se mettre en ligne
+         </p>
+      </section>
+      <!--
         flex-direction
       -->
       <section id="flexDirection">
         <h2>flex-direction</h2>
         <h3>en ligne ou en colonne ?</h3>
         <p>
-          row / column<br>
-          natif: row<br>
-          +: row-reverse / column-reverse<br>
+          row / column<br />
+          natif: row<br />
+          +: row-reverse / column-reverse<br />
         </p>
         <ul class="row1">
           <li>row</li>
@@ -53,9 +81,9 @@
         <h2>flex-wrap</h2>
         <h3>à la ligne ou non ?</h3>
         <p>
-          nowrap / wrap<br>
-          natif: nowrap<br>
-          +: wrap-reverse<br>
+          nowrap / wrap<br />
+          natif: nowrap<br />
+          +: wrap-reverse<br />
         </p>
         <ul class="row3">
           <li>nowrap</li>
@@ -75,7 +103,7 @@
         <h2>flex-flow</h2>
         <h3>un condensé ?</h3>
         <p>
-          la version courte c'est flex-flow: flex-direction et flex-wrap<br>
+          la version courte c'est flex-flow: flex-direction et flex-wrap<br />
           de manière native flex-flow = row et nowrap
         </p>
         <ul class="row5">
@@ -91,7 +119,7 @@
         <h2>justify-content</h2>
         <h3>de gauche à droite ou l'axe des X ?</h3>
         <p>
-          justify-content fait travailler (c'est illégal) les enfants sur l'horizontalité, l'axe X<br>
+          justify-content fait travailler (c'est illégal) les enfants sur l'horizontalité, l'axe X<br />
           de manière native justify-content = flex-start
         </p>
         <ul class="row6">
@@ -120,7 +148,7 @@
           <li>space-around</li>
         </ul>
         <p>
-          Pour résumer:<br>
+          Pour résumer:<br />
           justify-content: flex-start | flex-end | center | space-between | space-around;
         </p>
       </section>
@@ -131,7 +159,7 @@
         <h2>align-items</h2>
         <h3>de haut en bas ou l'axe des Y ?</h3>
         <p>
-          align-items fait travailler (c'est encore illégal) les enfants sur la verticalité, l'axe Y<br>
+          align-items fait travailler (c'est encore illégal) les enfants sur la verticalité, l'axe Y<br />
           de manière native align-items = stretch (min et max width sont respectées)
         </p>
         <ul class="row11">
@@ -165,7 +193,7 @@
           <li>avec baseline</li>
         </ul>
         <p>
-          Pour résumer:<br>
+          Pour résumer:<br />
           align-items: flex-start | flex-end | center | baseline | stretch;
         </p>
       </section>
@@ -176,8 +204,8 @@
         <h2>align-content</h2>
         <h3>s'organiser sur plus d'une ligne ?</h3>
         <p>
-          align-content pour faire simple c'est comme justify-content avec la place disponible en variante <br>
-          inutile s'il n'y a qu'une seule ligne ... logique ? <br>
+          align-content pour faire simple c'est comme justify-content avec la place disponible en variante <br />
+          inutile s'il n'y a qu'une seule ligne ... logique ? <br />
           rappel: justify-content fait travailler les enfants sur l'axe des X (horizontal)
         </p>
         <p>justify-content:</p>
@@ -299,10 +327,15 @@
           <li>stretch wrap</li>
         </ul>
         <p>
-          Pour résumer:<br>
-          align-content: flex-start | flex-end | center | space-between | space-around | stretch;<br>
+          Pour résumer:<br />
+          align-content: flex-start | flex-end | center | space-between | space-around | stretch;<br />
         </p>
       </section>
     </main>
+    <footer>
+      <a href="../bases/index.html">Chapitre 0: flexbox, la mise en page funky</a>
+      <a href="../children/index.html">Chapitre 2: les enfants se rebellent</a>
+    </footer>
+    <script type="text/javascript" src="nav.js"></script>
   </body>
 </html>
