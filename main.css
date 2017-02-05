@@ -79,12 +79,13 @@ li,
 .enfant {
   display: inline-block;
 }
-li a {
+a {
   text-decoration: none;
   color: #FFFFFF;
 }
-article a {
+p a {
   color: #286ca7;
+  font-weight: bold;
 }
 header li:hover {
   background-color: #286ca7;
@@ -97,11 +98,21 @@ h1 {
   margin: 0;
 }
 h2 {
+  font-size: 3em;
   text-transform: uppercase;
+  text-align: center;
   color: #286ca7;
 }
 h3 {
+  font-size: 1.5em;
+  text-align: center;
   margin: 0;
+}
+section h2 {
+  margin: 0;
+}
+section h3 {
+    margin: 0 0 5em 0;
 }
 section header {
   padding: 0 0 7em;
@@ -241,4 +252,80 @@ footer a {
 }
 .wrap {
   flex-wrap: wrap;
+}
+
+/* children */
+
+.row23 > li:first-child {
+  flex-grow: 1;
+}
+
+.row24 > li:first-child {
+  flex-grow: 2;
+}
+
+.row25 > li:first-child {
+  flex-grow: 1;
+}
+.row25 > li:nth-child(2) {
+  flex-grow: 2;
+}
+
+.row26 > li:first-child {
+  flex-shrink: 2;
+}
+
+.row27 > li:first-child {
+  flex-shrink: 4;
+}
+
+.row28 > li:first-child {
+  flex-basis: auto;
+}
+
+.row29 > li:first-child {
+  flex-basis: 1;
+}
+
+.row30 > li:nth-child(2) {
+  order: 1;
+}
+.row30 > li:last-child {
+  order: -1;
+}
+
+.row31,
+.row32,
+.row33,
+.row34,
+.row35,
+.row36 {
+  height: 150px;
+}
+
+.row31 > li:nth-child(2) {
+  align-self: auto;
+}
+
+.row32 > li:nth-child(2) {
+  align-self: flex-start;
+}
+
+.row33 > li:nth-child(2) {
+  align-self: flex-end;
+}
+
+.row34 > li:nth-child(2) {
+  align-self: center;
+}
+
+.row35 > li:nth-child(2) {
+  align-self: baseline;
+}
+.row35 > li:nth-child(2) {
+  align-self: baseline;
+}
+
+.row36 > li:nth-child(2) {
+  align-self: stretch;
 }

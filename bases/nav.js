@@ -55,5 +55,3 @@ window.onscroll = function () {
     liNav[6].setAttribute('class', 'activ');
   }
 };
-
-// window.onresize = function () { };
