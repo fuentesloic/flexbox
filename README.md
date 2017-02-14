@@ -5,7 +5,6 @@
 Pourquoi un enième guide sur flexbox ?
 Réponse: la volonté de partagé un contenu adapté à des non dev
 
-
 ## Sommaire
 
 - [0 - Bases](https://fuentesloic.github.io/flexbox/bases/)
