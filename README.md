@@ -2,7 +2,8 @@
 
 ## Sommaire
 
-- [0 - Bases](https://fuentesloic.github.io/flexbox/bases/)
-- [1 - Children](https://fuentesloic.github.io/flexbox/children/)
-- [2 - Advanced](https://fuentesloic.github.io/flexbox/advanced/)
-- [3 - Games](https://fuentesloic.github.io/flexbox/games/)
+- [0 - Intro](https://fuentesloic.github.io/flexbox/intro/)
+- [1 - Bases](https://fuentesloic.github.io/flexbox/bases/)
+- [2 - Children](https://fuentesloic.github.io/flexbox/children/)
+- [3 - Advanced](https://fuentesloic.github.io/flexbox/advanced/)
+- [4 - Games](https://fuentesloic.github.io/flexbox/games/)
