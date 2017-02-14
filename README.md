@@ -1,5 +1,10 @@
 # Flexbox
 
+## Intentions
+
+Pourquoi un enième guide sur flexbox ?
+Réponse: la volonté de partagé un contenu adapté à des non dev
+
 ## Sommaire
 
 - [0 - Intro](https://fuentesloic.github.io/flexbox/intro/)
