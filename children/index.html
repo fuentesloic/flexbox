@@ -27,10 +27,22 @@
       -->
       <section id="flexGrow">
         <h2>flex-grow</h2>
-        <h3>l'espace négatif</h3>
+        <h3>l'espace positif</h3>
         <p>
-          Grow travaille sur l'espace négatif, il se répartie selon l'indice grow<br>
-          Par défault grow = 0
+          Qu'est ce que l'espace positif ?
+          l'espace positif est l'espace qui de disponible dans le conteneur, en largeur si row, en hauteur si column<br>
+        </p>
+        <ul class="row1">
+          <li>aucun effet</li>
+          <li>aucun effet</li>
+          <li>aucun effet</li>
+        </ul>
+        <p>
+          Grow travaille sur cet espace positif, il va le prendre puis le répartir parmi tout les enfants<br>
+          D'où le fait que grow agrandisse vos enfants<br>
+          Il va faire selon selon un indice et par default grox = 0<br>
+          Cela explique pourquoi si un seul des enfants porte un grow de 1 ou +, cela ne change rien, car c'est lui<br>
+          récupère tout l'espace diponible, les autres étant à 0<br>
         </p>
         <ul class="row23">
           <li>effet grow: 1</li>
@@ -53,10 +65,12 @@
       -->
       <section id="flexShrink">
         <h2>flex-shrink</h2>
-        <h3>l'espace positif</h3>
+        <h3>l'espace négatif</h3>
         <p>
-          Shrink travaille sur l'espace positif, il répartie cette espace selon l'indice shrink<br>
-          Par défault shrink = 0
+          Shrink est l'opposé de Grow, lui travaille avec l'espace négatif, mais c'est quoi l'espace négatif ?<br>
+          l'espace négatif est l'espace qui va se réduire lorsque vous allez redimentionner la page (selon l'axe<br>
+          de travail (row ou column).<br>
+          Cet espace, se réduisant, va se répartir sur les enfant selon un indice qui de base est à 0<br>
         </p>
         <ul class="row26">
           <li>effet shrink: 2</li>
